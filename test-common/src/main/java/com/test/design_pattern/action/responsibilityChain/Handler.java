@@ -7,10 +7,12 @@ public abstract class Handler {
     private Handler mHandler;
 
     public Handler getmHandler() {
+
         return mHandler;
     }
 
     public void setmHandler(Handler mHandler) {
+
         this.mHandler = mHandler;
     }
 

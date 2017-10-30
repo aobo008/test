@@ -18,8 +18,10 @@ package com.test.design_pattern.structure.facade;
 		不能很好地限制客户端直接使用子系统类，如果对客户端访问子系统类做太多的限制则减少了可变性和灵活性。
 		如果设计不当，增加新的子系统可能需要修改外观类的源代码，违背了开闭原则。
 	
-	实际使用：
-		Facade一个典型应用就是数据库JDBC的应用。
+	 开发中外观模式应用场景:
+		 其实外观模式就是我们常见的封装，在我们实际开发中，遇到的各种对子系统各模块封装的逻辑，都可以理解为外观模式
+		 JDBC封装后的，commons提供的DBUtils类
+		 Hibernate提供的工具类，Spring JDBC工具类等
  */
 public class AdapterClient {
 	public static void main(String[] args) {

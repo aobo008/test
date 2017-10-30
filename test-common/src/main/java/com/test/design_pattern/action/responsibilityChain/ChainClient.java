@@ -14,6 +14,17 @@ package com.test.design_pattern.action.responsibilityChain;
          对于比较长的职责链，请求的处理可能涉及到多个处理对象，系统性能将受到一定影响，而且在进行代码调试时不太方便。
          如果建链不当，可能会造成循环调用，将导致系统陷入死循环。
 
+     实现方式：
+         1、链表方式：比如刚才的请假审批
+         2、非链表方式：通过集合，数组生成责任链更加实用，将链表上的各个对象都添加到集合中，然后通过反射给构建出来。
+         然后在容器里一个个的处理。（也就是说把测试代码中除了请假的其他代码都给用一个类来处理）
+
+    开发中常见场景：
+         1、Java的异常机制就是一个责任链模式，一个try可以对应多个catch。如果某一个catch不匹配，则跳到下一个catch中
+         2、JavaScript语言中的事件的冒泡和捕获机制
+         3、Servlet开发中，过滤器的链式处理
+         4、Struts2中，拦截器的调用也是典型的责任链模式
+
  */
 public class ChainClient {
     public static void main(String[] args) {
@@ -25,9 +36,9 @@ public class ChainClient {
         code.setmHandler(ui);
         ui.setmHandler(test);
         test.setmHandler(publish);
-        //yanbo找team leader review代码
-        System.out.println(code.handleRequest(Type.CODE_FORMAT, "YanBo"));
-        //yanbo找team leader测试代码
-        System.out.println(code.handleRequest(Type.TEST_PROJECT, "YanBo"));
+        //Alf找team leader review代码
+        System.out.println(code.handleRequest(Type.CODE_FORMAT, "Alf"));
+        //Alf找team leader测试代码
+        System.out.println(code.handleRequest(Type.TEST_PROJECT, "Alf"));
     }
 }

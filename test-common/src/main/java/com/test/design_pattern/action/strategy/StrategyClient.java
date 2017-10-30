@@ -14,6 +14,12 @@ package com.test.design_pattern.action.strategy;
          策略模式将造成系统产生很多具体策略类，任何细小的变化都将导致系统要增加一个新的具体策略类。
          无法同时在客户端使用多个策略类，也就是说，在使用策略模式时，客户端每次只能使用一个策略类，不支持使用一个策略类完成部分功能后再使用另一个策略类来完成剩余功能的情况。
 
+    策略模式本质：分离算法，选择不同的实现。
+
+    应用场景：
+         JAVASE的布局管理
+         Spring框架中，Resource接口，资源访问策略
+         javax.servlet.http.HttpServlet#service();
  */
 public class StrategyClient {
     public static void main(String[] args) {

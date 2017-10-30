@@ -15,6 +15,7 @@ public class HungryManager {
 	}
 
 	public static HungryManager getInstance() {
+
 		return mInstance;
 	}
 

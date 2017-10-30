@@ -12,6 +12,10 @@ package com.test.design_pattern.action.visitor;
          增加新的元素类很困难。在访问者模式中，每增加一个新的元素类都意味着要在抽象访问者角色中增加一个新的抽象操作，并在每一个具体访问者类中增加相应的具体操作，这违背了“开闭原则”的要求。
          破坏封装。访问者模式要求访问者对象访问并调用每一个元素对象的操作，这意味着元素对象有时候必须暴露一些自己的内部操作和内部状态，否则无法供访问者访问。
 
+    应用场景
+         XML文档解析器设计
+         编译器设计
+         复杂集合对象的处理
  */
 public class VisitorClient {
     public static void main(String[] args) {

@@ -2,6 +2,7 @@ package com.test.design_pattern.action.templateMethod;
 
 /**
  * Created by wanggy on 2017/10/27.
+ *
  */
 public abstract class AbstractClass {
 
@@ -12,6 +13,7 @@ public abstract class AbstractClass {
     }
 
     private final void concreteMethod() {
+
         System.out.println("Base Logic Code!");
     }
 

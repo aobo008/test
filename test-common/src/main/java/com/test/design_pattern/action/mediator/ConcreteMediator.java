@@ -8,18 +8,22 @@ public class ConcreteMediator extends AbstractMediator {
     private ConcreteColleagueAndroidDeveloper ad;
 
     public ConcreteColleagueHR getHr() {
+
         return hr;
     }
 
     public void setHr(ConcreteColleagueHR hr) {
+
         this.hr = hr;
     }
 
     public ConcreteColleagueAndroidDeveloper getAd() {
+
         return ad;
     }
 
     public void setAd(ConcreteColleagueAndroidDeveloper ad) {
+
         this.ad = ad;
     }
 

@@ -6,6 +6,7 @@ package com.test.design_pattern.action.state;
 public class ConcreteStateFinish implements State {
     @Override
     public void handleState(String str) {
+
         System.out.println("State: finish, str="+str);
     }
 }

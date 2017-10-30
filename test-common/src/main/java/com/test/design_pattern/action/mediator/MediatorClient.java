@@ -11,6 +11,9 @@ package com.test.design_pattern.action.mediator;
     中介者模式缺点：
          在具体中介者类中包含了大量同事之间的交互细节，可能会导致具体中介者类非常复杂，使得系统难以维护。
 
+    开发中常见应用场景：
+        MVC模式中的C部分，M和V都和它打交道
+        Java.lang.reflect.Method#invoke()​
  */
 public class MediatorClient {
     public static void main(String[] args){

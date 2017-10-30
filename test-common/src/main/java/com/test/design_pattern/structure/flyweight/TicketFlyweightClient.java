@@ -20,6 +20,10 @@ package com.test.design_pattern.structure.flyweight;
 	实际使用：
 		 在Java中，String类型就是使用了享元模式。String对象是final类型，对象一旦创建就不可改变。
 		 在Java中字符串常量都是存在常量池中的，Java会确保一个字符串常量在常量池中只有一个拷贝
+
+		 比如线程池，数据库连接池，这些都利用享元模式共享了部分属性，在池中操作。
+		 String类的设计也是享元模式
+
  */
 public class TicketFlyweightClient {
 	public static void main(String[] args) {

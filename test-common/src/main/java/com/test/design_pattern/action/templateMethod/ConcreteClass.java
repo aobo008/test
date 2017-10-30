@@ -7,6 +7,7 @@ public class ConcreteClass extends AbstractClass {
 
     @Override
     protected void absMethod() {
+
         System.out.println("Signal Logic Code!");
     }
 

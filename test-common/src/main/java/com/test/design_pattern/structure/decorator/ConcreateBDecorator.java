@@ -13,6 +13,7 @@ public class ConcreateBDecorator implements IComponent {
 	IComponent component;
 	
 	public ConcreateBDecorator(IComponent component){
+
 		this.component = component;
 	}
 

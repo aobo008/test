@@ -15,14 +15,17 @@ public class RobotPositionMemento {
     }
 
     public String getmRobotName() {
+
         return mRobotName;
     }
 
     public int getmCurXPos() {
+
         return mCurXPos;
     }
 
     public int getmCurYpos() {
+
         return mCurYpos;
     }
 }

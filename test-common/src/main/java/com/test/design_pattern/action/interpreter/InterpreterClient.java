@@ -31,7 +31,7 @@ public class InterpreterClient {
         context.addValue(a, 15);
         context.addValue(b, 10000);
 
-        Expression expression = new Div(new Mul(a, b), new Add(new Sub(a, b), c));
+        IExpression expression = new Div(new Mul(a, b), new Add(new Sub(a, b), c));
         System.out.println("Result = "+expression.interpret(context));
     }
 }

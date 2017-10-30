@@ -6,6 +6,7 @@ package com.test.design_pattern.action.strategy;
 public class ConcreteStrategyJava implements Strategy {
     @Override
     public void programLanguage() {
+
         System.out.println("Use Java to Program this App!");
     }
 }

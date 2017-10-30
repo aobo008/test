@@ -6,11 +6,13 @@ package com.test.design_pattern.action.visitor;
 public class ConcreteVisitorB implements IVisitor {
     @Override
     public void visit(ConcreteElementNodeA node) {
+
         System.out.println(node.operateA());
     }
 
     @Override
     public void visit(ConcreteElementNodeB node) {
+
         System.out.println(node.operateB());
     }
 }

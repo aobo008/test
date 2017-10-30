@@ -12,6 +12,7 @@ public class RealSubject implements ISubject {
 
 	@Override
 	public void connectNetwork() {
+
 		System.out.println("我可以直接联网");
 	}
 

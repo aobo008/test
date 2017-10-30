@@ -4,19 +4,21 @@ package com.test.design_pattern.action.command;
  * Created by wanggy on 2017/10/27.
  */
 public class Invoker {
-    private Command command;
+    private ICommand ICommand;
 
-    public Invoker(Command command) {
-        this.command = command;
+    public Invoker(ICommand ICommand) {
+
+        this.ICommand = ICommand;
     }
 
-    public void setCommand(Command command) {
-        this.command = command;
+    public void setICommand(ICommand ICommand) {
+
+        this.ICommand = ICommand;
     }
 
     public void calling() {
-        if (command != null) {
-            command.exec();
+        if (ICommand != null) {
+            ICommand.exec();
         }
     }
 }

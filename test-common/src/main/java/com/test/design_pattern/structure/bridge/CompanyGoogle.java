@@ -6,6 +6,7 @@ package com.test.design_pattern.structure.bridge;
 public class CompanyGoogle extends AbstractCompany {
 
     public CompanyGoogle(AbstractPlatform platform) {
+
         this.abstractPlatform = platform;
     }
 

@@ -20,10 +20,12 @@ public class RobotPosition {
     }
 
     public void drawScreen() {
+
         System.out.println("#RobotPosition#"+mRobotName+": "+mCurXPos+", "+mCurYpos);
     }
 
     public RobotPositionMemento save() {
+
         return new RobotPositionMemento(mRobotName, mCurXPos, mCurYpos);
     }
 

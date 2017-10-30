@@ -13,6 +13,9 @@ package com.test.design_pattern.creative.prototype;
          需要为每一个类配备一个克隆方法，而且该克隆方法位于一个类的内部，当对已有的类进行改造时违背“开闭原则”。
          在实现深克隆时需要编写较为复杂的代码，而且当对象之间存在多重的嵌套引用时，为了实现深克隆，每一层对象对应的类都必须支持深克隆比较麻烦。
 
+     使用场景
+         原型模式适用场景：如果某个对象new的过程中很耗时，则可以考虑使用原型模式。
+         Spring框架中bean对象的创建就两种模式：单例模式或者原型模式
  */
 public class PrototypeClient {
     public static void main(String[] args) {

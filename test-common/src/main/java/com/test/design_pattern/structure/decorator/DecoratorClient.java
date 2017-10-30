@@ -22,6 +22,14 @@ package com.test.design_pattern.structure.decorator;
 	
 	实际使用：
 		java IO 流是典型的装饰模式。
+ 		Swing包中图形界面构件功能
+ 		Servlet API中提供了一个request对象的Decorator设计模式的默认实现类HttpServletRequestWrapper,增强了request对象的功能。
+    	Struts2中，request，response，session对象的处理。
+
+ 	装饰模式和桥接模式的区别：
+ 		两个模式都是为了解决过多子类对象的问题，桥接模式是对象自身有过多的维度，造成过多的子类。而让维度分类后在搭建一个桥梁来联系起来。
+ 		而装饰模式是解决在增加新功能的时候产生多个类的问题。
+
  */
 public class DecoratorClient {
 	public static void main(String[]  args)

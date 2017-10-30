@@ -11,18 +11,20 @@ package com.test.design_pattern.creative.abstractFactory;
     抽象工厂模式的缺点：
         增加新的产品等级结构麻烦，需要对原有系统进行较大的修改，甚至需要修改抽象层代码，违背“开闭原则”。
 
+    抽象工厂模式
+        不可以增加产品中某一个配件，可以增加一个具体的产品族。
  */
 public class AbstractFactoryClient {
     public static void main(String[] args) {
         IAbstractFactory factory = new FactoryChina();
-        IProduct product = new ProductLenovo();
-        IMaterial material = new MaterialMetal();
+        IProduct product = factory.generateProduct();
+        IMaterial material = factory.importMaterial();
         product.showProduct();
         material.showMaterial();
 
         factory = new FactoryAmerican();
-        product= new ProductMac();
-        material = new MaterialWater();
+        product = factory.generateProduct();
+        material = factory.importMaterial();
         product.showProduct();
         material.showMaterial();
     }

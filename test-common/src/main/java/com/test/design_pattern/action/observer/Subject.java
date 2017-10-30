@@ -7,18 +7,20 @@ import java.util.List;
  * Created by wanggy on 2017/10/27.
  */
 public abstract class Subject {
-    private List<Observer> list = new ArrayList<Observer>();
+    private List<IObserver> list = new ArrayList<IObserver>();
 
-    public void attach(Observer observer){
+    public void attach(IObserver observer){
+
         list.add(observer);
     }
 
-    public void detach(Observer observer){
+    public void detach(IObserver observer){
+
         list.remove(observer);
     }
 
     public void modifyObservers(String newState){
-        for (Observer observer:list){
+        for (IObserver observer:list){
             observer.update(newState);
         }
     }

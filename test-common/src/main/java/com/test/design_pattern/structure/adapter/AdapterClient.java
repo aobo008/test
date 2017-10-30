@@ -16,6 +16,9 @@ package com.test.design_pattern.structure.adapter;
      在Java中，类适配器模式中的目标抽象类只能为接口，不能为类，其使用有一定的局限性。
      对象适配器要在适配器中置换适配者类的某些方法比较麻烦。
 
+     适配器模式应用场景：
+         java.io.InputStreamReader(InputStream)
+         java.io.OutputStreamWriter(OutputStream)
  */
 public class AdapterClient {
     public static void main(String[] args){

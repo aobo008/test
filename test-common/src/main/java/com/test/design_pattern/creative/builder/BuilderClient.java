@@ -12,6 +12,13 @@ package com.test.design_pattern.creative.builder;
          建造者模式所创建的产品具有较多的共同点，其组成部分相似，如果产品之间的差异性很大，不适合使用建造者模式，因此其使用范围受到一定的限制。
          如果产品的内部变化复杂，可能会导致需要定义很多具体建造者类来实现这种变化，导致系统变得很庞大，增加系统的理解难度和运行成本。
 
+    应用场景：
+        如果一个对象的构建很复杂，需要很多步骤，则考虑使用建造者模式，把对象的构建和最后的组装分离开来。
+         在平常使用的类中如果后缀为builder则就是建造者模式
+         StringBuilder类的apend方法
+         SQL中的PreparedStatement
+         JDOM中的DomBuilder、SAXBuilder
+
  */
 public class BuilderClient {
     public static void main(String[] args){

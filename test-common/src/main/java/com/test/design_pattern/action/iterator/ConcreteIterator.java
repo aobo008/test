@@ -10,6 +10,7 @@ public class ConcreteIterator  implements Iterator {
     private int cursor;
 
     public ConcreteIterator(List<Object> list) {
+
         this.list = list;
     }
 
@@ -25,17 +26,21 @@ public class ConcreteIterator  implements Iterator {
         if (hasNext()) {
             ret = list.get(cursor);
         }
+        //递增变量
         cursor++;
+
         return ret;
     }
 
     @Override
     public boolean hasNext() {
+
         return !(cursor == list.size());
     }
 
     @Override
     public Object currentItem() {
+
         return list.get(cursor);
     }
 }

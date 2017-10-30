@@ -5,6 +5,7 @@ package com.test.design_pattern.creative.prototype;
  */
 public class ConcretePrototype extends ParentPrototype {
     public void printHashCode() {
+
         System.out.println("ConcretePrototype hashcode=" + this.hashCode());
     }
 }

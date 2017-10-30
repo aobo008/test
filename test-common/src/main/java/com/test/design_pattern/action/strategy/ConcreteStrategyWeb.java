@@ -6,6 +6,7 @@ package com.test.design_pattern.action.strategy;
 public class ConcreteStrategyWeb  implements Strategy {
     @Override
     public void programLanguage() {
+
         System.out.println("Use Web to Program this App!");
     }
 }

@@ -7,10 +7,12 @@ public class RobotPositionCaretaker {
     private  RobotPositionMemento memento;
 
     public RobotPositionMemento getMemento() {
+
         return memento;
     }
 
     public void setMemento(RobotPositionMemento memento) {
+
         this.memento = memento;
     }
 }

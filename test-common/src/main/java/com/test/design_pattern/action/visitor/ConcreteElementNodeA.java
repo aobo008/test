@@ -6,10 +6,12 @@ package com.test.design_pattern.action.visitor;
 public class ConcreteElementNodeA extends AbstractElementNode {
     @Override
     public void accept(IVisitor IVisitor) {
+
         IVisitor.visit(this);
     }
 
     public String operateA(){
+
         return "ConcreteElementNodeA";
     }
 }
